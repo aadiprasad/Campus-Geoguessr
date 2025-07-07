@@ -1,0 +1,3 @@
+For the direction prediction task, I implemented an EfficientNet-based model that predicts angles using a sine-cosine representation. This approach solves the circular nature of angle prediction, avoiding discontinuities at 0°/360° boundaries.
+
+Predicted angle in sin-cos format (2 outputs) to handle circular continuity (0° ≈ 360°). Loss Function: Mean Squared Error (MSE) on sin-cos predictions. Final angle calculation involved converting predictions using arctan2(sin_pred, cos_pred).

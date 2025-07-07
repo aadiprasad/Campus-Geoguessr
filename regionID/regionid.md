@@ -1,0 +1,7 @@
+The model used for learning image features was ConvNeXt, a modernized convolutional neural network architecture that retains the efficiency of traditional CNNs while incorporating design choices inspired by vision transformers. In addition to ConvNeXt, I experimented with EfficientNetB0 and EfficientNetV2, both of which are known for their lightweight architecture and strong performance on image classification tasks. I deliberately chose not to use ResNet, as EfficientNet models offered a better trade-off between computational cost and accuracy.
+
+All three models—ConvNeXt, EfficientNetB0, and EfficientNetV2—achieved comparable accuracy of around 93% within 20 epochs, suggesting that the task at hand was sufficiently learnable across architectures. The purpose of the model was to extract meaningful image features and use them to determine the region or category each image belonged to. The consistent performance across models indicates that the dataset is well-structured and the features distinguishing regions are learnable by CNN-based architectures.
+
+However, by the end of training, the model fully memorized the training set, indicating a clear case of overfitting. This suggests that while the models performed well on the training data, they may not generalize effectively to unseen samples without additional regularization or data augmentation strategies.
+
+link to three models: https://iiithydresearch-my.sharepoint.com/:f:/g/personal/aadi_prasad_research_iiit_ac_in/Et-WEqP1AjBFvMJS1yDv2NABL_LmhF0FD8R4cxlhgDET_Q?e=PXYqes
